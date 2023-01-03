@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import PersonCard from './components/PersonCard/index'
 
 function App() {
   return (
