@@ -9,12 +9,7 @@ import PersonCard from './components/PersonCard/index'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    {data.map(
-      (card, index) => 
-        <PersonCard key={index} firstName={card.name.first} lastName={card.name.last} email={card.email} img={card.picture.medium} />
-    )}
-    
+    <App />    
   </React.StrictMode>
 )
 
