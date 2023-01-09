@@ -4,18 +4,14 @@ import Button from './components/Button';
 import { data } from './AppMockItems/peopleInformation'
 import { useState } from 'react';
 
-let index = 0
-
 function App() {
   const [ComponentsList, setNewComponent] = useState([])
 
   const createNewComponent = () => {
-    if (index === data.length) {
+    if (ComponentsList.length === data.length) {
       setNewComponent([])
-      index = 0
     } else {
-      setNewComponent([...ComponentsList, data[index]])
-      index++
+      setNewComponent([...ComponentsList, data[ComponentsList.length]])
     }
   }
 
